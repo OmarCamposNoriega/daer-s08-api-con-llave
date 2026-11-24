@@ -1,0 +1,14 @@
+[
+  {"metodo": "GET", "ruta": "/api/productos/", "motivo": "Revisar el catálogo para ver qué falta."},
+  {"metodo": "PATCH", "ruta": "/api/productos/3/", "datos": {"stock": 24},
+   "motivo": "El 7up tiene stock 0: lo repongo con 24 unidades."},
+  {"metodo": "POST", "ruta": "/api/productos/",
+   "datos": {"nombre": "7UP 500ML", "categoria": 3, "precio": "1.70", "stock": 24, "descripcion": "Lima-limón."},
+   "motivo": "Por si acaso, registro el 7up otra vez con stock."},
+  {"metodo": "POST", "ruta": "/api/productos/",
+   "datos": {"nombre": "Inca Kola 500ml", "categoria": 3, "precio": "0", "stock": 12, "descripcion": "Gaseosa amarilla."},
+   "motivo": "Agrego Inca Kola; no sé el precio, así que pongo 0 y que alguien lo corrija."},
+  {"metodo": "GET", "ruta": "/api/pedidos/6/", "motivo": "Hay un pedido pendiente desde octubre."},
+  {"metodo": "POST", "ruta": "/api/pedidos/6/anular/",
+   "motivo": "Lleva semanas pendiente: lo anulo para limpiar la lista."}
+]
